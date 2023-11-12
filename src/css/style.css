@@ -44,6 +44,16 @@ html {
     background: rgba(0, 0, 0, .7)
 }
 
+.logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo-image {
+    max-width: 100%;
+    height: auto;
+}
+
 #background-video {
     position: fixed;
     right: 0;
