@@ -232,7 +232,7 @@ html {
 }
 
 .spinner .path {
-    stroke: #ff0000;
+    stroke: #4900FF;
     stroke-linecap: round;
     animation: dash 1.5s ease-in-out infinite
 }
