@@ -162,10 +162,10 @@ html {
 .popup-content::before {
     content: "";
     position: absolute;
-    top: -4px; /* Border width */
-    left: -4px; /* Border width */
-    right: -4px; /* Border width */
-    bottom: -4px; /* Border width */
+    top: -6px; /* Adjusted for border width */
+    left: -6px; /* Adjusted for border width */
+    right: -6px; /* Adjusted for border width */
+    bottom: -6px; /* Adjusted for border width */
     background: linear-gradient(60deg, #7700ff, #9633ff, #830202, #ff0004, #ff0000);
     background-size: 300% 300%;
     border-radius: 12px; /* Match the border radius of .popup-content */
