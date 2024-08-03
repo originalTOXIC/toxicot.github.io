@@ -162,15 +162,16 @@ html {
 .popup-content::before {
     content: "";
     position: absolute;
-    top: -8px;
-    left: -8px;
-    right: -8px;
-    bottom: -8px;
+    top: -2px; /* Border width */
+    left: -2px; /* Border width */
+    right: -2px; /* Border width */
+    bottom: -2px; /* Border width */
     background: linear-gradient(60deg, #7700ff, #9633ff, #830202, #ff0004, #ff0000);
     background-size: 300% 300%;
     border-radius: inherit;
     z-index: -1; /* Place it behind the content */
     animation: moveGradient 4s alternate infinite;
+    pointer-events: none; /* Ensure the pseudo-element doesn't interfere with clicks */
 }
 
 @keyframes fadeIn {
