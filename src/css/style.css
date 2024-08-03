@@ -29,7 +29,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../images/banner.png);
+    background-image: url(../images/toxicbanner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,7 +85,7 @@ html {
 
 .profile-banner {
     position: absolute;
-    background: url(../images/banner.png);
+    background: url(../images/toxicbanner.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
