@@ -154,12 +154,13 @@ html {
     max-width: 300px;
     text-align: center;
     border-radius: 10px;
+    overflow: hidden; /* Ensure the pseudo-element is contained */
     transform: scale(0.7);
     animation: popUp 0.3s forwards; /* Animation for the pop-up content */
-    overflow: hidden; /* Ensure the pseudo-element is contained */
 }
 
-.popup-border {
+.popup-content::before {
+    content: "";
     position: absolute;
     top: -4px;
     left: -4px;
