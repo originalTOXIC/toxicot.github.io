@@ -146,6 +146,7 @@ html {
 }
 
 .popup-content {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     position: relative;
     background-color: #000; /* Black background */
     color: #fff; /* White text */
