@@ -138,7 +138,7 @@ html {
 }
 
 .links-block a {
-    margin: 0 5px;
+    margin: 0 10px;
     line-height: 0;
     cursor: pointer;
     display: inline-block;
