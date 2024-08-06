@@ -2,7 +2,7 @@
 
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 body,
@@ -34,7 +34,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
-    position: relative
+    position: relative;
 }
 
 .wrap::after {
@@ -42,7 +42,7 @@ html {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: rgba(0, 0, 0, .7)
+    background: rgba(0, 0, 0, .7);
 }
 
 #background-video {
@@ -50,13 +50,13 @@ html {
     right: 0;
     bottom: 0;
     min-width: 100%;
-    min-height: 100%
+    min-height: 100%;
 }
 
 .main-block {
     display: block;
     z-index: 3;
-    width: 320px
+    width: 320px;
 }
 
 .profile,
@@ -66,17 +66,14 @@ html {
     flex-wrap: wrap;
     align-content: space-between;
     box-sizing: border-box;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 .profile {
     background: rgba(17, 17, 17, .6);
-    backdrop-filter: blur(3px)
-}
-
-.profile {
+    backdrop-filter: blur(3px);
     padding: 10px 20px;
-    line-height: 1
+    line-height: 1;
 }
 
 .profile img {
@@ -126,10 +123,18 @@ html {
     z-index: -1;
     width: calc(100% + var(--border-width) * 2);
     height: calc(100% + var(--border-width) * 2);
-    background: linear-gradient(60deg, #7700ff, #9633ff, #021083, #0004FF, #0000FF);
+    background: linear-gradient(60deg, rgba(119, 0, 255, 0.7), rgba(150, 51, 255, 0.7), rgba(2, 16, 131, 0.7), rgba(0, 4, 255, 0.7), rgba(0, 0, 255, 0.7));
     background-size: 300% 300%;
     border-radius: 12px;
     animation: moveGradient 4s alternate infinite;
+}
+
+.links-block {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: center;
+    width: 100%;
 }
 
 .links-block a {
@@ -206,27 +211,8 @@ html {
     to { opacity: 1; transform: scale(1); }
 }
 
-@keyframes moveGradient {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
-}
-
-.links-block {
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: space-between;
-    justify-content: center;
-    width: 100%
-}
-
 .links-block img {
-    width: 25px
-}
-
-.links-block a {
-    margin: 0 5px;
-    line-height: 0;
-    cursor: pointer
+    width: 25px;
 }
 
 #loading-screen {
@@ -237,7 +223,7 @@ html {
     height: 100%;
     background-image: linear-gradient(-105deg, #8b00cc, #0000ff);
     z-index: 1337;
-    transition: all 1s ease-out
+    transition: all 1s ease-out;
 }
 
 .spinner {
@@ -248,38 +234,37 @@ html {
     left: 50%;
     margin: -25px 0 0 -25px;
     width: 50px;
-    height: 50px
+    height: 50px;
 }
 
 .spinner .path {
     stroke: #4900FF;
     stroke-linecap: round;
-    animation: dash 1.5s ease-in-out infinite
+    animation: dash 1.5s ease-in-out infinite;
 }
 
 @keyframes rotate {
     100% {
-        transform: rotate(360deg)
+        transform: rotate(360deg);
     }
 }
 
 @keyframes dash {
     0% {
         stroke-dasharray: 1, 150;
-        stroke-dashoffset: 0
+        stroke-dashoffset: 0;
     }
 
     50% {
         stroke-dasharray: 90, 150;
-        stroke-dashoffset: -35
+        stroke-dashoffset: -35;
     }
 
     100% {
         stroke-dasharray: 90, 150;
-        stroke-dashoffset: -124
+        stroke-dashoffset: -124;
     }
 }
-
 
 @media screen and (max-width:768px) {
     .wrap {
@@ -287,9 +272,8 @@ html {
         background-color: transparent;
     }
 
-
     .wrap::after {
-        background: transparent
+        background: transparent;
     }
 
     .profile-banner {
@@ -301,37 +285,35 @@ html {
     }
 }
 
-
 @media screen and (min-width:768px) {
-
     .main-block,
     .profile,
     .social-tab {
-        width: 480px
+        width: 480px;
     }
 
     .profile {
         padding: 30px;
-        line-height: 1
+        line-height: 1;
     }
 
     .social-tab {
         margin-top: 20px;
-        padding: 20px
+        padding: 20px;
     }
 
     .links-block img {
-        width: 32px
+        width: 32px;
     }
 
     .links-block a {
-        margin: 0 10px
+        margin: 0 10px;
     }
 }
 
 @keyframes moveGradient {
     50% {
-        background-position: 100% 50%
+        background-position: 100% 50%;
     }
 }
 
@@ -342,5 +324,5 @@ html {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    pointer-events: none
+    pointer-events: none;
 }
