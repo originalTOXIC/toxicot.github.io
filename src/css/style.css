@@ -137,10 +137,13 @@ html {
     line-height: 0;
     cursor: pointer;
     display: inline-block;
+}
+
+.links-block img {
     transition: transform 0.3s ease-in-out; /* Transition for the pop-out effect */
 }
 
-.links-block a:hover {
+.links-block a:hover img {
     transform: scale(1.1); /* Pop out effect */
 }
 
