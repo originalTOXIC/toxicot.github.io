@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     window.onclick = function(event) {
-        if (event.target == valorantPopup) {
+        if (event.target === valorantPopup) {
             valorantPopup.style.display = "none";
         }
-        if (event.target == discordPopup) {
+        if (event.target === discordPopup) {
             discordPopup.style.display = "none";
         }
     }
