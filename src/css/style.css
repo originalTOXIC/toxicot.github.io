@@ -145,11 +145,11 @@ html {
 }
 
 .links-block img {
-    transition: transform 0.3s ease-in-out; /* Transition for the pop-out effect */
+    transition: transform 0.3s ease-in-out;
 }
 
 .links-block a:hover img {
-    transform: scale(1.1); /* Pop out effect */
+    transform: scale(1.5);
 }
 
 @keyframes moveGradient {
