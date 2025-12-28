@@ -2,7 +2,7 @@
 const playlist = [
     {
         title: "Til Further Notice",
-        src: "src/audio/til-further-notice.mp3"
+        src: "src/audio/tilfurthernotice.mp3"
     },
     {
         title: "Second Track",
