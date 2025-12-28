@@ -2,15 +2,8 @@
 const playlist = [
     {
         title: "Til Further Notice",
-        src: "src/audio/tilfurthernotice.mp3"
-    },
-    {
-        title: "Second Track",
-        src: "src/audio/second-track.mp3"
-    },
-    {
-        title: "Third Track",
-        src: "src/audio/third-track.mp3"
+        src: "src/audio/til-further-notice.mp3",
+        cover: "src/images/til-further-notice.png"
     }
 ];
 
@@ -29,6 +22,7 @@ const bufferBar = document.getElementById("ap-buffer");
 const volumeRange = document.getElementById("ap-volume-range");
 const muteBtn = document.getElementById("ap-mute");
 const volumeIconSvg = document.getElementById("ap-volume-icon-svg");
+const coverEl = document.querySelector(".ap-cover");
 
 let currentIndex = 0;
 let isSeeking = false;
@@ -40,6 +34,7 @@ function loadTrack(index) {
     audio.src = track.src;
     audio.load();
     titleEl.textContent = track.title;
+    coverEl.style.backgroundImage = `url('${track.cover}')`;
     currentEl.textContent = "0:00";
     durationEl.textContent = "0:00";
     fill.style.width = "0%";
@@ -206,3 +201,13 @@ document.addEventListener("keydown", (e) => {
 audio.volume = volumeRange.value;
 setVolumeIcon(audio.volume, audio.muted);
 loadTrack(currentIndex);
+
+// Wait for audio to load before attempting autoplay
+if (audio.paused) {
+    const playPromise = audio.play();
+    if (playPromise !== undefined) {
+        playPromise.catch(error => {
+            console.log('Autoplay prevented by browser');
+        });
+    }
+}
