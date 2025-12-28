@@ -28,68 +28,6 @@
                     <a target=_blank href=https://guns.lol/toxicfrr><img src=src/images/social/guns.png class=unselectable></a>
                 </div>
             </div>
-            <div class="audio-shell">
-                <div class="audio-player" aria-label="Music player">
-                    <!-- Hidden audio element -->
-                    <audio id="ap-audio" preload="metadata" autoplay></audio>
-
-                    <!-- cover art -->
-                    <div class="ap-cover" aria-hidden="true"></div>
-
-                    <!-- middle: title + seek -->
-                    <div class="ap-main">
-                        <div class="ap-title-row">
-                            <div>
-                                <div class="ap-queue-label">NOW PLAYING</div>
-                                <div id="ap-title" class="ap-title">Loading…</div>
-                            </div>
-                            <div class="ap-time-total">
-                                <span>of</span>
-                                <span id="ap-duration" class="ap-duration">0:00</span>
-                            </div>
-                        </div>
-
-                        <div class="ap-seek-row">
-                            <div id="ap-current" class="ap-time-current">0:00</div>
-                            <div class="ap-seek" id="ap-seek" aria-label="Seek in track">
-                                <div class="ap-seek-buffer" id="ap-buffer"></div>
-                                <div class="ap-seek-fill" id="ap-fill"></div>
-                                <div class="ap-seek-thumb" id="ap-thumb"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- controls -->
-                    <div class="ap-controls">
-                        <button class="ap-btn" id="ap-prev" aria-label="Previous track">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill="currentColor" d="M7 5v14l9-7zM5 5h2v14H5z"/>
-                            </svg>
-                        </button>
-
-                        <button class="ap-btn ap-btn-main" id="ap-play" aria-label="Play / pause">
-                            <svg id="ap-play-icon" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill="currentColor" d="M8 5v14l11-7z"/>
-                            </svg>
-                        </button>
-
-                        <button class="ap-btn" id="ap-next" aria-label="Next track">
-                            <svg viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill="currentColor" d="M8 5v14l9-7zM19 5h-2v14h2z"/>
-                            </svg>
-                        </button>
-
-                        <div class="ap-volume" aria-label="Volume">
-                            <div id="ap-mute" class="ap-volume-icon">
-                                <svg id="ap-volume-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path fill="currentColor" d="M5 9v6h4l5 5V4L9 9H5z"/>
-                                </svg>
-                            </div>
-                            <input id="ap-volume-range" type="range" min="0" max="1" step="0.01" value="0.5">
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <div id="valorant-popup" class="popup">
@@ -106,9 +44,9 @@
     <script src="src/js/jquery-3.6.0.js"></script>
     <script src="src/js/loading.js"></script>
     <script src="src/js/popup.js" defer></script>
-    <script src="src/js/audio.js"></script>
 </body>
 </html>
+
 
 
 
